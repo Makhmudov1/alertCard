@@ -1,9 +1,9 @@
 <template>
 <!--  alert card-->
-    <article class="border rounded-lg mt-[3px] relative
-    pt-[15px] pb-[15px]  pl-[36px] pr-[13px]
-    sm:pl-[25px] sm:pr-[16px]
-    md:pr-[28px]"
+    <article class="border rounded-lg mt-1 relative
+    pt-4 pb-4  pl-9 pr-3
+    sm:pl-6 sm:pr-4
+    md:pr-7"
     :class="[{
       'block before:absolute before:w-2.5 before:h-2.5 md:before:w-3 md:before:h-3 before:rounded-full before:bg-accent before:top-1/4 sm:before:top-1/2 before:-translate-y-1.5 before:right-full before:translate-x-7 sm:before:-translate-x-3':!item.isReady,
       }]">
@@ -13,7 +13,7 @@
           <p class = "bg-accent-8 rounded text-10 font-semibold py-1 px-2.5
           sm:py-1 sm:px-2.5 sm:text-12">{{item.date}}</p>
           <!--Тег 'время'-->
-          <p class="bg-accent-8 rounded text-10 font-semibold py-1 px-2.5 ml-[5px]
+          <p class="bg-accent-8 rounded text-10 font-semibold py-1 px-2.5 ml-1
           sm:px-2.5 sm:py-1 sm:text-12">
             <!--Иконка 'время'-->
             <svg class="hidden sm:inline-block" width="13.5" height="13.5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,12 +29,12 @@
           </p>
         </div>
       <!--Текст уведомления (контейнер)-->
-      <div class="mt-[16px] md:flex md:flex-row md:justify-between
+      <div class="mt-4 md:flex md:flex-row md:justify-between
       md:py-1 md:text-16">
         <!--Текст уведомления-->
         <p class="text-14 font-normal">{{item.text}}</p>
         <!--Ссылка 'перейти к заказу'-->
-          <a class="mt-[10px]
+          <a class="mt-2.5
           flex justify-end text-12
           sm:py-2 sm:pl-1 sm:text-12
           md:pl-1 md:py-1 md:text-14
